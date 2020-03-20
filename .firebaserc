@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "my-password-generator-app"
+  },
+  "targets": {
+    "my-password-generator-app": {
+      "hosting": {
+        "my-password-generator": [
+          "my-password-generator-app"
+        ]
+      }
+    }
+  }
+}
