@@ -2,7 +2,7 @@
   "hosting": [
     {
       "site": "my-password-generator-app",
-      "public": "dist/my-password-genetator",
+      "public": "dist/my-password-genetator/",
       "ignore": [
         "firebase.json",
         "**/.*",
