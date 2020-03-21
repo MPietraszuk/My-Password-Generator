@@ -43,9 +43,19 @@
         </div>
       </div>
 
-      <button [disabled]="
-          !(length && (includeLetters || includeCapitals || includeSymbols || includeNumbers))
-        " (click)="onButtonClick()" class="button has-background-primary is-fullwidth">
+      <button
+        [disabled]="
+          !(
+            length &&
+            (includeLetters ||
+              includeCapitals ||
+              includeSymbols ||
+              includeNumbers)
+          )
+        "
+        (click)="onButtonClick()"
+        class="button has-background-primary is-fullwidth"
+      >
         Generate!
       </button>
 
@@ -59,8 +69,19 @@
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
-      <strong>My Password Generator</strong> is made with <i class="material-icons">favorite</i> in Laguna Niguel, CA by
-      <a href="https://www.linkedin.com/in/trozpietraszuk/">Mark Pietraszuk</a>.
+      <strong>My Password Generator</strong> is made with
+      <i class="material-icons">favorite</i> in Laguna Niguel, CA by
+      <a href="https://www.linkedin.com/in/trozpietraszuk/">Mark Pietraszuk</a>
+      &copy; <span id="copyright">2020</span>.
     </p>
+    <script type="text/javascript">
+      var thisYear = new Date().getFullYear(),
+        startYear = "2020";
+
+      if (thisYear > startYear) {
+        document.getElementById("copyright").innerHTML =
+          startYear + "-" + thisYear;
+      }
+    </script>
   </div>
 </footer>
