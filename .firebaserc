@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "my-password-generator-app"
+    "default": "my-password-generator-fb"
   },
   "targets": {
-    "my-password-generator-app": {
+    "my-password-generator-fb": {
       "hosting": {
         "my-password-generator": [
-          "my-password-generator-app"
+          "my-password-generator-fb"
         ]
       }
     }
